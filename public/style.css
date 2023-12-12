@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;500;700&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+}
+.center-div{
+    padding-top: 10%;
+}
+.btn.btn-success{
+padding: .4em 2em;
+}
+
+

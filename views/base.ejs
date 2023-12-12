@@ -1,0 +1,27 @@
+<%- include("header") -%>
+
+  <div class="text-center center-div" id="login">
+    <div class="container w-25 border py-5">
+      <div class="title pb-2">
+        <h2 class="font-weight-bold">Login System</h2>
+        <span>Login in for the existing user</span>
+        <% if(massage.error){ %>
+          <div id="error-message"  class="alert text-center">
+           <%=massage.error%>
+          </div>
+          <%}%>
+      </div>
+      <form action="/login" method="POST" class="pt-2">
+        <div class="form-group">
+          <input type="email" class="form-control" placeholder="Email" name="email" required>
+        
+        </div>
+        <div class="form-group mt-3">
+          <input type="password" class="form-control" name="password" placeholder="password" required>
+        </div>
+        <button type="submit" class="btn btn-success rounded-pill mt-3">Submit</button>
+      </form>
+    </div>
+  </div>
+
+ <%-include("footer") -%>
